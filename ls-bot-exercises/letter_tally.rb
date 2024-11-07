@@ -4,18 +4,9 @@
 def letter_tally(string)
   return "Not a string" unless string.is_a? String
 
-  tally = {}
-  string.each_char do |char|
-    if !tally.include?(char)
-      if char != " "
-        tally[char] = 1
-      end
-    else
-      tally[char] += 1
-    end
+  string.delete(" ").chars.each_with_object({}) do |char, tally|
+    tally[char] ||= 0; tally[char] += 1
   end
-
-  return tally
 end
 
 p letter_tally "Welcome to the jungle!!!!!"
