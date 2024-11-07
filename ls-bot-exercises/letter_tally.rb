@@ -4,8 +4,8 @@
 def letter_tally(string)
   return "Not a string" unless string.is_a? String
 
-  string.delete(" ").chars.each_with_object({}) do |char, tally|
-    tally[char] ||= 0; tally[char] += 1
+  string.delete(" ").chars.each_with_object(Hash.new(0)) do |char, tally|
+    tally[char] += 1
   end
 end
 
