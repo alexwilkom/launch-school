@@ -2,9 +2,7 @@
 # and returns a hash with each character from the string and the number of times it appears.
 
 def letter_tally(string)
-  if !string.is_a? String
-    return "Not a string"
-  end
+  return "Not a string" unless string.is_a? String
 
   tally = {}
   string.each_char do |char|
@@ -17,11 +15,10 @@ def letter_tally(string)
     end
   end
 
-  tally
+  return tally
 end
 
-p letter_tally "Welcome to the jungle!"
-p letter_tally "Orlando Orlando Orlando"
-p letter_tally "Alice was reading the book when..."
+p letter_tally "Welcome to the jungle!!!!!"
+p letter_tally "Orlando Orlando Orlando..."
 p letter_tally 45
 p letter_tally "Alibaba"
