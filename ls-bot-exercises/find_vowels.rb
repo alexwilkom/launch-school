@@ -22,7 +22,7 @@ def find_vowels(string)
 end
 
 p find_vowels "Welcome to the jungle!" # ["e", "o", "u"]
-p find_vowels "Anna Maria is alive." # ["a", "i", "e"]
-p find_vowels "Marsupial" # ["a", "u", "i"]
+p find_vowels "Anna Maria is alive." # ["a", "e", "i"]
+p find_vowels "Marsupial" # ["a", "i", "u"]
 p find_vowels "" # []
 p find_vowels 1 # "Not a string"
