@@ -3,8 +3,6 @@ import json
 with open('calculator-messages.json', 'r') as file:
     MESSAGES = json.load(file)
 
-print(MESSAGES)
-
 def prompt(message):
     print(f"=> {message}")
 
