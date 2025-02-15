@@ -1,13 +1,9 @@
 {
   "welcome": "Welcome to Calculator!",
-  "askNumbers": {
-    "firstNumber": "What's the first number?",
-    "secondNumber": "What's the second number?",
-    "invalidNumber": "Hmm... that doesn't look like a valid number."
-  },
-  "askOperation": {
-    "chooseOperation": "What operation would you like to perform?\n1) Add 2) Subtract 3) Multiply 4) Divide",
-    "errorOperation": "You must choose 1, 2, 3, or 4"
-  },
-  "anotherOperation": "Would you like to perform another operation?\nType y if yes. Reply anything else if not."
+  "first_number": "What's the first number?",
+  "second_number": "What's the second number?",
+  "invalid_number": "Hmm... that doesn't look like a valid number.",
+  "choose_operation": "What operation would you like to perform?\n1) Add 2) Subtract 3) Multiply 4) Divide",
+  "error_operation": "You must choose 1, 2, 3, or 4",
+  "another_operation": "Would you like to perform another operation?\nType y if yes. Reply anything else if not."
 }
