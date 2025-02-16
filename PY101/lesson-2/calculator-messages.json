@@ -1,9 +1,29 @@
 {
-  "welcome": "Welcome to Calculator!",
-  "first_number": "What's the first number?",
-  "second_number": "What's the second number?",
-  "invalid_number": "Hmm... that doesn't look like a valid number.",
-  "choose_operation": "What operation would you like to perform?\n1) Add 2) Subtract 3) Multiply 4) Divide",
-  "error_operation": "You must choose 1, 2, 3, or 4",
-  "another_operation": "Would you like to perform another operation?\nType y if yes. Reply anything else if not."
+  "en": {
+    "welcome": "Welcome to Calculator!",
+    "first_number": "What's the first number?",
+    "second_number": "What's the second number?",
+    "invalid_number": "Hmm... that doesn't look like a valid number.",
+    "choose_operation": "What operation would you like to perform?\n1) Add 2) Subtract 3) Multiply 4) Divide",
+    "error_operation": "You must choose 1, 2, 3, or 4",
+    "another_operation": "Would you like to perform another operation? (y/n))"
+  },
+  "es": {
+    "welcome": "¡Bienvenido a la Calculatora!",
+    "first_number": "¿Cuál es el primer número?",
+    "second_number": "¿Cuál es el segundo número?",
+    "invalid_number": "Hmm... eso no parece un número válido.",
+    "choose_operation": "¿Qué operación desea realizar?\n1) Sumar 2) Restar 3) Multiplicar 4) Dividir",
+    "error_operation": "Debe elegir 1, 2, 3 o 4",
+    "another_operation": "¿Desea realizar otra operación? (y/n)"
+  },
+  "it": {
+    "welcome": "Benvenuti alla Calcolatrice!",
+    "first_number": "Qual è il primo numero?",
+    "second_number": "Qual è il secondo numero?",
+    "invalid_number": "Non sembra un numero valido.",
+    "choose_operation": "Quale operazione si desidera eseguire?\n1) Aggiungere 2) Sottrarre 3) Moltiplicare 4) Dividere",
+    "error_operation": "È necessario scegliere 1, 2, 3 o 4.",
+    "another_operation": "Desidera eseguire un'altra operazione? (y/n)"
+  }
 }
