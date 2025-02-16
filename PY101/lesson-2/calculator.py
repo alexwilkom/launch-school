@@ -13,7 +13,7 @@ def prompt(message):
 
 def invalid_number(number_str):
     try:
-        int(number_str)
+        float(number_str)
     except ValueError:
         return True
 
@@ -49,13 +49,13 @@ def ask_operation():
 def perform_operation(numbers, operation):
     match operation:
         case '1':
-            output = int(numbers[0]) + int(numbers[1])
+            output = float(numbers[0]) + float(numbers[1])
         case '2':
-            output = int(numbers[0]) - int(numbers[1])
+            output = float(numbers[0]) - float(numbers[1])
         case '3':
-            output = int(numbers[0]) * int(numbers[1])
+            output = float(numbers[0]) * float(numbers[1])
         case '4':
-            output = int(numbers[0]) / int(numbers[1])
+            output = float(numbers[0]) / float(numbers[1])
 
     return output
 
