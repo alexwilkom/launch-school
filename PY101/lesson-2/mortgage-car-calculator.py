@@ -18,15 +18,15 @@ def ask_number(message):
         prompt('Please enter a positive number.')
         number = input()
     
-    return number
+    return float(number)
 
 loan_amount = ask_number('What is the loan amount?')
 interest_rate = ask_number('What is the interest rate? Example: 5.5 for 5.5%')
 loan_duration_years = ask_number('What is the loan duration in years?')
 
-monthly_interest_rate = float(interest_rate) / 100 / 12
-loan_duration_months = float(loan_duration_years) * 12
-monthly_payment = float(loan_amount) * (
+monthly_interest_rate = interest_rate / 100 / 12
+loan_duration_months = loan_duration_years * 12
+monthly_payment = loan_amount * (
         monthly_interest_rate /
             (1 - (1 + monthly_interest_rate) ** (-loan_duration_months))
     )
