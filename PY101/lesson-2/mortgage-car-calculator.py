@@ -17,7 +17,7 @@ while invalid_number(loan_amount):
     prompt('Please enter a positive number.')
     loan_amount = input()
 
-prompt('What is the interest rate?')
+prompt('What is the interest rate? Example: 5.5 for 5.5%')
 interest_rate = input()
 while invalid_number(interest_rate):
     prompt('Please enter a positive number.')
