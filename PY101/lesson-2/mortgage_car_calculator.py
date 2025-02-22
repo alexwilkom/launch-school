@@ -17,12 +17,11 @@ def ask_number(message):
     while invalid_number(number):
         prompt('Please enter a positive number.')
         number = input()
-    
     return float(number)
 
 while True:
     loan_amount = ask_number('What is the loan amount?')
-    interest_rate = ask_number('What is the interest rate? Example: 5.5 for 5.5%')
+    interest_rate = ask_number('What is the interest rate? ie. 5.5 for 5.5%')
     loan_duration_years = ask_number('What is the loan duration in years?')
 
     monthly_interest_rate = interest_rate / 100 / 12
@@ -35,8 +34,8 @@ while True:
     prompt(f'The monthly payment is: ${round(monthly_payment, 2)}')
 
     while True:
-        answer = input('\nDo you want to perform another calculation? (y/n) ').strip().lower()
-        if answer.startswith(('y', 'n')):
+        answer = input('\nDo you want to perform another calculation? (y/n) ')
+        if answer.strip().lower().startswith(('y', 'n')):
             break
         prompt('Please enter "y" or "n".')
 
