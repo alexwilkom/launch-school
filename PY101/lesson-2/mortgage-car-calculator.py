@@ -33,3 +33,5 @@ monthly_payment = float(loan_amount) * (
         monthly_interest_rate /
             (1 - (1 + monthly_interest_rate) ** (-loan_duration_months))
     )
+
+prompt(f"The monthly payment is: ${round(monthly_payment, 2)}")
