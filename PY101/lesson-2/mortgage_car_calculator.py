@@ -11,7 +11,7 @@ def invalid_number(number_str):
 
     return False
 
-def ask_number(message):
+def get_number(message):
     prompt(message)
     number = input()
     while invalid_number(number):
@@ -20,9 +20,9 @@ def ask_number(message):
     return float(number)
 
 while True:
-    loan_amount = ask_number('What is the loan amount?')
-    interest_rate = ask_number('What is the interest rate? ie. 5.5 for 5.5%')
-    loan_duration_years = ask_number('What is the loan duration in years?')
+    loan_amount = get_number('What is the loan amount?')
+    interest_rate = get_number('What is the interest rate? ie. 5.5 for 5.5%')
+    loan_duration_years = get_number('What is the loan duration in years?')
 
     monthly_interest_rate = interest_rate / 100 / 12
     loan_duration_months = loan_duration_years * 12
