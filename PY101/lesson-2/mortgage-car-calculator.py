@@ -41,5 +41,5 @@ while True:
         prompt('Please enter "y" or "n".')
 
     if answer.startswith('n'):
-        print('\nThank you for using the Mortgage/Car Calculator!')
+        print('\nThank you for using the Mortgage/Car Loan Calculator!')
         break
