@@ -34,11 +34,11 @@ while True:
     prompt(f'The monthly payment is: ${round(monthly_payment, 2)}')
 
     while True:
-        answer = input('\nDo you want to perform another calculation? (y/n) ')
-        if answer.strip().lower().startswith(('y', 'n')):
+        repeat = input('\nDo you want to perform another calculation? (y/n) ')
+        if repeat.strip().lower().startswith(('y', 'n')):
             break
         prompt('Please enter "y" or "n".')
 
-    if answer.startswith('n'):
+    if repeat.startswith('n'):
         print('\nThank you for using the Mortgage/Car Loan Calculator!')
         break
