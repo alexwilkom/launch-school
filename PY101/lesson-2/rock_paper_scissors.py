@@ -1,6 +1,6 @@
 import random
 
-VALID_CHOICES = ['rock', 'paper', 'scissors']
+VALID_CHOICES = ['rock', 'paper', 'scissors', "lizard", "spock"]
 
 def prompt(message):
     print(f"==> {message}")
@@ -8,16 +8,21 @@ def prompt(message):
 def display_winner(player, computer):
     prompt(f"You chose {player}, computer chose {computer}")
 
-    if ((player == "rock" and computer == "scissors") or
-        (player == "paper" and computer == "rock") or
-        (player == "scissors" and computer == "paper")):
+    if ((player == "rock" and
+         (computer == "scissors" or computer == "lizard")) or
+        (player == "paper" and
+         (computer == "rock" or computer == "spock")) or
+        (player == "scissors" and
+         (computer == "paper" or computer == "lizard")) or
+        (player == "lizard" and
+         (computer == "paper" or computer == "spock")) or
+        (player == "spock" and
+         (computer == "rock" or computer == "scissors"))):
         prompt("You win!")
-    elif ((player == "rock" and computer == "paper") or
-          (player == "paper" and computer == "scissors") or
-          (player == "scissors" and computer == "rock")):
-        prompt("Computer wins!")
-    else:
+    elif player == computer:
         prompt("It's a tie!")
+    else:
+        prompt("Computer wins!")
 
 while True:
     prompt(f'Choose one: {", ".join(VALID_CHOICES)}')
